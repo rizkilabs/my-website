@@ -8,6 +8,7 @@
   --secondaryText: #4b5156;
 
   --themeDotBorder: #24292e;
+  --previewBg: rgb(251, 249, 243, 0.8);
 }
 
 html,
@@ -163,6 +164,8 @@ h6 {
 
 .left-column {
   grid-area: left-column;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #profile-pic {
@@ -197,8 +200,71 @@ h6 {
   cursor: pointer;
 }
 
+.theme-dot:hover {
+  border-width: 5px;
+}
+
+#light-mode {
+  background-color: #fff;
+}
+
+#blue-mode {
+  background-color: #192734;
+}
+
+#green-mode {
+  background-color: #78866b;
+}
+
+#purple-mode {
+  background-color: #7e4c74;
+}
+
+#settings-note {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
 .right-column {
   grid-area: right-column;
+}
+
+#preview {
+  width: 300px;
+  border: 1.5px solid #17a2b8;
+  background-color: var (--previewBg);
+  padding: 15px;
+  position: relative;
+}
+
+.corner {
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid #17a2b8;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+}
+
+#corner-tl {
+  top: -5px;
+  left: -5px;
+}
+
+#corner-tr {
+  top: -5px;
+  right: -5px;
+}
+
+#corner-br {
+  bottom: -5px;
+  right: -5px;
+}
+
+#corner-bl {
+  bottom: -5px;
+  left: -5px;
 }
 
 @media screen and (max-width: 1200px) {
