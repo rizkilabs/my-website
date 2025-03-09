@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="default.css" />
+    <link id="theme-style" rel="stylesheet" href="./purple.css" />
     <title>M. Rizki</title>
   </head>
   <body>
@@ -48,10 +49,10 @@
             </h5>
 
             <div id="theme-options-wrapper">
-              <div id="light-mode" class="theme-dot"></div>
-              <div id="blue-mode" class="theme-dot"></div>
-              <div id="green-mode" class="theme-dot"></div>
-              <div id="purple-mode" class="theme-dot"></div>
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
 
             <p id="settings-note">
@@ -142,37 +143,51 @@
         <h3 style="text-align: center">Some of my past project</h3>
 
         <div class="post-wrapper">
-          <div class="post">
-            <img
-              class="thumbnail"
-              src="./images/follow_me.png"
-              alt="first project"
-            />
-            <div class="post-preview">
-              <h4 class="post-title">Post Title</h4>
-              <p class="post-intro">This is a sentence, Some more text</p>
+          <div>
+            <div class="post">
+              <img
+                class="thumbnail"
+                src="./images/follow_me.png"
+                alt="first project"
+              />
+              <div class="post-preview">
+                <h4 class="post-title">Laboratory M System</h4>
+                <p class="post-intro">
+                  Designed built & mantained a the lab management system for FOI
+                  Laboratories
+                </p>
+                <a href="./post.html">Read More</a>
+              </div>
             </div>
           </div>
-          <div class="post">
-            <img
-              class="thumbnail"
-              src="./images/follow_me.png"
-              alt="first project"
-            />
-            <div class="post-preview">
-              <h4 class="post-title">Post Title</h4>
-              <p class="post-intro">This is a sentence, Some more text</p>
+          <div>
+            <div class="post">
+              <img
+                class="thumbnail"
+                src="./images/follow_me.png"
+                alt="first project"
+              />
+              <div class="post-preview">
+                <h4 class="post-title">Online Store - Course</h4>
+                <p class="post-intro">
+                  Online store with paypal payments integration and guest user
+                  shopping
+                </p>
+                <a href="#">Read More</a>
+              </div>
             </div>
           </div>
-          <div class="post">
-            <img
-              class="thumbnail"
-              src="./images/follow_me.png"
-              alt="first project"
-            />
-            <div class="post-preview">
-              <h4 class="post-title">Post Title</h4>
-              <p class="post-intro">This is a sentence, Some more text</p>
+          <div>
+            <div class="post">
+              <img
+                class="thumbnail"
+                src="./images/follow_me.png"
+                alt="first project"
+              />
+              <div class="post-preview">
+                <h4 class="post-title">Post Title</h4>
+                <p class="post-intro">This is a sentence, Some more text</p>
+              </div>
             </div>
           </div>
         </div>
@@ -180,7 +195,26 @@
     </section>
 
     <section class="s2">
-      <div class="main-container">Contact</div>
+      <div class="main-container">
+        <h3 style="text-align: center">Get in touch</h3>
+        <form id="contact-form">
+          <label>Name</label>
+          <input class="input-field" type="text" name="name" />
+
+          <label>Subject</label>
+          <input class="input-field" type="text" name="subject" />
+
+          <label>Email</label>
+          <input class="input-field" type="text" name="email" />
+
+          <label>Message</label>
+          <textarea class="input-field" name="message"></textarea>
+
+          <input id="submit-btn" type="submit" value="Send" />
+        </form>
+      </div>
     </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
